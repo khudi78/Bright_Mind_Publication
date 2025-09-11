@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Remove default margin & padding */
+* {
+  
+  box-sizing: border-box;
+}
