@@ -4,7 +4,6 @@ import cors from "cors";
 import bodyParser from "body-parser";
 
 const app = express();
-const PORT = 5000;
 
 // Middleware
 app.use(cors());
@@ -17,17 +16,17 @@ app.post("/send-email", async (req, res) => {
   try {
     // Configure transporter
     const transporter = nodemailer.createTransport({
-      service: "gmail", // You can use Outlook, Yahoo, or custom SMTP
+      service: "gmail",
       auth: {
-        user: "krkhushi2001@gmail.com",      // admin email
-        pass: "fzpx fkns xbmd fsev",          // app password (NOT your Gmail password)
+        user: process.env.ADMIN_EMAIL,   // use environment variable
+        pass: process.env.APP_PASSWORD,  // use environment variable
       },
     });
 
     // Send mail
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: "krkhushi2001@gmail.com",
+      to: process.env.ADMIN_EMAIL,
       subject: subject,
       text: `You have a new message:\n\nName: ${name}\nEmail: ${email}\n\n${message}`,
     });
@@ -39,16 +38,7 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-
-
-
-// app.listen(PORT, () => {
-//   console.log(`Server running on http://localhost:${PORT}`);
-// });
-
-app.get("/api/hello", (req, res) => {
-  res.json({ msg: "Hello from backend!" });
-});
-
-// don't use app.listen directly
-module.exports = app;
+// Instead of app.listen, export app (Vercel will handle it)
+// export default app;
+const PORT = 5000;
+app.listen(PORT, () => { console.log(`Server running on http://localhost:${PORT}`); });
