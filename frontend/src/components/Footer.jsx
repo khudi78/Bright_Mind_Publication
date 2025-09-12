@@ -1,10 +1,11 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link} from "react-router-dom";
 import WhatsapButton from "./WhatsapButton";
+import img2 from "../assets/img2.jpg"
 
 export default function Footer() {
   return (
@@ -51,7 +52,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2 hover:cursor-pointer hover:text-gray-400 hover:text-[17px]">
               <MdKeyboardArrowRight />
-              <WhatsapButton />
+              <WhatsapButton subject="Chat on WhatsApp" />
             </li>
             
           </ul>
@@ -62,31 +63,42 @@ export default function Footer() {
           <h2 className="font-bold  text-2xl mb-6">Contact Us</h2>
         <div className="space-y-6">
             <div className="flex items-center gap-5 text-base border-b-1 pb-3">
-            <FaPhoneAlt className="text-xl"/> 12345678
+            <FaPhoneAlt className="text-xl"/> +91 77760 54424
           </div>
           <div className="flex items-center gap-5 text-base border-b-1 pb-3">
             <IoMdMail  className="text-xl"/> email@example.com
           </div>
+
         </div>
           
         </div>
       </div>
 
       {/* Socials */}
-      <div className="flex gap-6 mt-6 text-xl mx-26">
-        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
+      <div className="flex w-[1310px] justify-between mt-[-80px] text-xl mx-14">
+       <div className="flex gap-4 ml-12 mt-40">
+         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
           <FaInstagram className="text-gray-800" />
         </div>
         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
-          <FaTwitter className="text-gray-800" />
+          <WhatsapButton subject="iconi" />
         </div>
         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
-          <FaLinkedinIn className="text-gray-800" />
+         <Link to="https://www.linkedin.com/in/bright-mind-publication-528b44383/">  <FaLinkedinIn className="text-gray-800" /></Link>
+        </div> 
         </div>
+          <div>
+           <div className="ml-12">
+             <img className=" w-[150px] h-[150px] " src={img2} alt="" />
+             <div className="ml-[-7px] text-lg">Scan this for quick chat</div>
+             {/* <div className="ml-16 text-sm">OR</div> */}
+          </div>
+          {/* <div className="mt-[-4px] ml-14 text-lg hover:text-gray-800 hover:cursor-pointer hover:underline"><Link to="https://whatsapp.com/channel/0029VbB3tqV8F2pMRpd4q20a ">Follow our channel</Link></div> */}
+          </div>
       </div>
 
       {/* Bottom Row */}
-      <div className="flex justify-between items-center mt-10 text-sm text-gray-400 max-w-7xl mx-auto border-t-1 pt-4 ">
+      <div className="flex justify-between m-2 items-center  text-sm text-gray-400 max-w-7xl mx-auto border-t-1 pt-4 ">
         <div>All rights reserved by APA Publications</div>
         <div>Designed by Briz</div>
       </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoMdMail } from "react-icons/io";
-import { FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {  FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import WhatsapButton from "./WhatsapButton";
+import logo from "../assets/logo.png";
 export default function SubHeader({ bgImage, title, subtitle, image }) {
   return (
     <div className="relative">
@@ -43,22 +44,24 @@ export default function SubHeader({ bgImage, title, subtitle, image }) {
                 <FaInstagram className="text-gray-800" />
               </div>
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
-                <FaTwitter className="text-gray-800" />
+                 <WhatsapButton subject="iconi" />
               </div>
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
-                <FaLinkedinIn className="text-gray-800" />
+                <Link to="https://www.linkedin.com/in/bright-mind-publication-528b44383/"><FaLinkedinIn className="text-gray-800" /></Link>
               </div>
             </div>
           </div>
         </div>
 
         {/* Navbar */}
-        <div className="relative z-10 bg-gray-900/30 text-white py-4 h-[550px]">
+        <div className="relative z-10 bg-gray-900/30 text-white h-[550px]">
           <div className="flex flex-col">
-            <div className=" flex-row max-w-7xl mx-auto flex justify-between gap-[700px] items-center">
+            <div className=" flex-row max-w-7xl mx-auto flex justify-between gap-[600px] items-center">
               {/* Logo */}
-              <div className="text-2xl font-bold">BM Publication</div>
-
+<div className="text-2xl font-bold flex flex-row">
+                <div className="w-[90px]"><img src={logo} alt="BM Publication Logo" /></div>
+                <div className="mt-5">BM Publication</div>
+              </div>
               {/* Navbar links */}
               <div>
                 <nav>

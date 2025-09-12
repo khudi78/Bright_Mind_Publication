@@ -1,15 +1,17 @@
 import React from "react";
 import { IoMdMail } from "react-icons/io";
-import { FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {  FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+import WhatsapButton from "./WhatsapButton";
 
 export default function Header({ bgImage }) {
   return (
     <div className="relative">
       {/* Background image */}
       <div
-        className="h-[690px] bg-cover bg-center"
+        className="h-[500px] sm:h-[690px]  bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         {/* Overlay for dim effect */}
@@ -17,13 +19,13 @@ export default function Header({ bgImage }) {
 
         {/* Top bar */}
         <div className="relative z-10 bg-gray-900/50 text-white py-2">
-          <div className="max-w-7xl mx-auto flex justify-between gap-60 items-center">
-            <div className="flex gap-3 text-base">
-              <IoMdMail className="text-lg" /> email@example.com
+          <div className="w-full pl-2 pr-2 sm:max-w-7xl mx-auto flex justify-between sm:gap-60 gap-1 items-center">
+            <div className="flex gap-3 text-sm sm:text-base">
+              <IoMdMail className="text-lg " /> email@example.com
             </div>
             <div className="w-[500px] overflow-hidden">
               <p
-                className="whitespace-nowrap inline-block"
+                className="whitespace-nowrap inline-block text-xs sm:text-base"
                 style={{ animation: "marquee 10s linear infinite" }}
               >
                 Bright Mind Publication — Where Ideas Shine ✨
@@ -39,25 +41,28 @@ export default function Header({ bgImage }) {
               </style>
             </div>
             <div className="flex gap-3 text-sm">
-              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
+              <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
                 <FaInstagram className="text-gray-800" />
               </div>
-              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
-                <FaTwitter className="text-gray-800" />
+              <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
+                 <WhatsapButton subject="iconi" />
               </div>
-              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
-                <FaLinkedinIn className="text-gray-800" />
+              <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
+                <Link to="https://www.linkedin.com/in/bright-mind-publication-528b44383/"><FaLinkedinIn className="text-gray-800" /></Link>
               </div>
             </div>
           </div>
         </div>
 
         {/* Navbar */}
-        <div className="relative z-10 bg-gray-900/30 text-white py-4 h-[640px]">
+        <div className="relative z-10 bg-gray-900/30 text-white  h-[455px] sm:h-[640px]">
           <div className="flex flex-col">
-            <div className=" flex-row max-w-7xl mx-auto flex justify-between gap-[700px] items-center">
+            <div className=" flex-row w-full sm:max-w-7xl mx-auto flex justify-between gap-[] sm:gap-[600px] items-center">
               {/* Logo */}
-              <div className="text-2xl font-bold">BM Publication</div>
+              <div className="text-2xl font-bold flex flex-row">
+                <div className="w-[90px]"><img src={logo} alt="BM Publication Logo" /></div>
+                <div className="mt-5">BM Publication</div>
+              </div>
 
               {/* Navbar links */}
               <div>
