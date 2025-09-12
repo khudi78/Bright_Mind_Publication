@@ -42,6 +42,13 @@ app.post("/send-email", async (req, res) => {
 
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+// app.listen(PORT, () => {
+//   console.log(`Server running on http://localhost:${PORT}`);
+// });
+
+app.get("/api/hello", (req, res) => {
+  res.json({ msg: "Hello from backend!" });
 });
+
+// don't use app.listen directly
+module.exports = app;
