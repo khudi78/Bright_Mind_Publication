@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "npx vite --version",
-    "tailwind:init": "tailwindcss init -p"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",
