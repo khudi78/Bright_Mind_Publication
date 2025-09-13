@@ -23,7 +23,7 @@ function Home() {
             <div className="w-70 mx-auto sm:w-[2300px] sm:h-[500px] ">
               <img
                 className="rounded-2xl shadow-2xl shadow-gray-700"
-                src="https://media.istockphoto.com/id/1359589480/photo/man-working.jpg?s=612x612&w=0&k=20&c=zd1S1WtyJ6aIxpK53DK0hcEXehRWDQ4uUbYVzmwTpwA="
+                src="https://st3.depositphotos.com/13349494/17380/i/450/depositphotos_173800336-stock-photo-man-writing-in-notepad.jpg"
                 alt=""
               />
             </div>

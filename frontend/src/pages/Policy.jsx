@@ -4,7 +4,7 @@ export default function Policy() {
   return (
     <div>
       <Headother
-        bgImage="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        bgImage="https://images.unsplash.com/photo-1614332625575-6bef549fcc7b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHVibGljYXRpb258ZW58MHx8MHx8fDA%3D"
         title="Policies"
         subtitle="Clear Policies, Strong Trust. 🤝 Guidelines That Protect, Principles That Empower."
       />

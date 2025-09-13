@@ -6,10 +6,10 @@ export default function Publication() {
   return (
     <>
       <SubHeader
-        bgImage="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        bgImage="https://www.zibelinepub.com/wp-content/uploads/2018/01/book.jpg"
         title="Research Publication"
         subtitle="We simplify academic publishing with end-to-end guidance—from manuscript preparation to journal submission. Our experts refine your work through editing, formatting, and plagiarism checks, ensuring it meets global standards. We also help you choose the right journals indexed in Scopus, Web of Science, and PubMed to boost acceptance. With personalized consultation, timely updates, and ethical practices, we make your publication journey smooth, transparent, and impactful."
-        image="https://images.stockcake.com/public/e/b/e/ebedddb2-b72d-45d5-801c-72f210e77b5d_large/girl-reading-intently-stockcake.jpg"
+        image="https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=0&k=20&c=5ffcOPYEmdP_r0yr0gPlb_nuVdipEdgG_SrtaeW_AIE="
       />
 
       <div className="w-[370px] sm:w-[1000px] mb-20  mx-auto flex flex-col gap-5 sm:gap-10 mt-10 sm:mt-15 py-5 sm:py-10 bg-gray-200 shadow-lg shadow-gray-600 px-4 sm:p-10 ">

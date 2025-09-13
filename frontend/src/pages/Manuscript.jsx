@@ -7,10 +7,10 @@ export default function Manuscript() {
   return (
     <>
       <SubHeader
-        bgImage="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        bgImage="https://www.zibelinepub.com/wp-content/uploads/2018/01/book.jpg"
         title="Manuscript , Thesis Writing & Editing "
         subtitle="Bright Mind Publication offers expert manuscript and thesis writing support for students, researchers, and academics across all fields. From concept to final submission, our team ensures your work meets the highest academic standards—clear, professional, and institution-ready."
-        image="https://images.stockcake.com/public/e/b/e/ebedddb2-b72d-45d5-801c-72f210e77b5d_large/girl-reading-intently-stockcake.jpg"
+        image="https://media.istockphoto.com/id/508586144/photo/reading-book.jpg?s=612x612&w=0&k=20&c=OsmoANlXNS89ocHMQtbHYAj1EUTdyJ6GqMJpFmOtL8w="
 
       />
 
