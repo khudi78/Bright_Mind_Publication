@@ -12,12 +12,12 @@ export default function Publication() {
         image="https://images.stockcake.com/public/e/b/e/ebedddb2-b72d-45d5-801c-72f210e77b5d_large/girl-reading-intently-stockcake.jpg"
       />
 
-      <div className="max-w-5xl mb-20  mx-auto flex flex-col gap-10 mt-15 py-10 bg-gray-200 shadow-lg shadow-gray-600 p-10 ">
+      <div className="w-[370px] sm:w-[1000px] mb-20  mx-auto flex flex-col gap-5 sm:gap-10 mt-10 sm:mt-15 py-5 sm:py-10 bg-gray-200 shadow-lg shadow-gray-600 px-4 sm:p-10 ">
         <div className="border-b-1 border-gray-400 pb-6">
-          <div className="text-2xl font-semibold mb-5">
+          <div className="text-xl sm:text-2xl font-semibold mb-5">
             Why Bright Mind Publication Services for Research Publication?
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-sm sm:text-base">
             <p>
               Bright Mind Publication Services has been a trusted partner in
               academic publishing for over a decade. With an unwavering focus on
@@ -35,10 +35,10 @@ export default function Publication() {
           </div>
         </div>
         <div className="border-b-1 border-gray-400 pb-6">
-          <div className="text-2xl font-semibold mb-5">
+          <div className="text-xl sm:text-2xl font-semibold mb-5">
             Worldwide Visibility and Credibility
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-sm sm:text-base">
             <p>
               We maximize the visibility of your research by ensuring indexing
               in leading international databases. Our publications are featured
@@ -54,10 +54,10 @@ export default function Publication() {
           </div>
         </div>
         <div className="border-b-1 border-gray-400 pb-6">
-          <div className="text-2xl font-semibold mb-5">
+          <div className="text-xl sm:text-2xl font-semibold mb-5">
             Specialized Support Across Disciplines
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-sm sm:text-base">
             <p>
               We bring together a diverse team of subject-matter experts
               dedicated to supporting your unique research needs. Our
@@ -75,10 +75,10 @@ export default function Publication() {
           </div>
         </div>
         <div>
-          <div className="text-2xl font-semibold mb-5">
+          <div className="text-xl sm:text-2xl font-semibold mb-5">
             Fast-Track Publication Options
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-sm sm:text-base">
             <p>
               We understand that timing is critical in academic publishing,
               which is why we offer fast-track options for researchers with

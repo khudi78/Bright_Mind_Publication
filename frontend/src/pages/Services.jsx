@@ -11,10 +11,10 @@ export default function Services() {
         subtitle="How We Help You Achieve Your Publication Goals"
       />
 
-      <div className="flex flex-col gap-15 mb-20 max-w-5xl mx-auto mt-10 py-10">
-        <div className="shadow-xl shadow-gray-600 p-7 bg-gray-200 rounded-sm">
+      <div className="flex flex-col gap-15 mb-20 w-[350px] sm:w-[1020px] mx-auto mt-10 py-10">
+        <div className="shadow-xl  shadow-gray-600 p-7 bg-gray-200 rounded-sm">
           <div className="text-xl font-semibold mb-5">Research Guidance</div>
-          <div>
+          <div className="text-sm sm:text-base">
             We provide expert consultation to guide your research towards
             publication. Our team reviews your article and recommends the most
             suitable peer-reviewed journals. With personalized support, we help
@@ -24,7 +24,7 @@ export default function Services() {
         </div>
         <div  className="shadow-xl shadow-gray-600 p-7 bg-gray-200 rounded-sm">
           <div className="text-xl font-semibold mb-5">Research Publication</div>
-          <div>
+          <div className="text-sm sm:text-base">
             Bright Mind Publication helps researchers publish in reputed,
             high-impact journals indexed in trusted databases. We ensure your
             work is accurately represented and reaches the right audience. Our
@@ -34,7 +34,7 @@ export default function Services() {
         </div>
         <div  className="shadow-xl shadow-gray-600 p-7 bg-gray-200 rounded-sm">
           <div className="text-xl font-semibold mb-5">Manuscript, Thesis Writing & Editing</div>
-          <div>
+          <div className="text-sm sm:text-base">
             We deliver comprehensive writing and editing support for manuscripts
             and theses. From idea development to final submission, our experts
             refine your work for clarity, accuracy, and impact. Every document

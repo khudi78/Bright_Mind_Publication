@@ -9,7 +9,7 @@ export default function Policy() {
         subtitle="Clear Policies, Strong Trust. 🤝 Guidelines That Protect, Principles That Empower."
       />
 
-      <div className="max-w-5xl px-20 mb-20  mx-auto flex flex-col gap-5  mt-15 py-10 bg-gray-200 shadow-lg shadow-gray-600 p-10 ">
+      <div className="w-[365px] sm:w-[1000px] px-5 sm:px-20 mb-20  mx-auto flex flex-col gap-5  mt-15 py-10 bg-gray-200 shadow-lg shadow-gray-600 p-10 ">
        <div> <div className="text-lg font-semibold"> Privacy Policy</div>
         <div>
           We're committed to your privacy. This policy details how we collect

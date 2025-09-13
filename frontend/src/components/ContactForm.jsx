@@ -28,7 +28,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-[350px] mx-auto p-6 bg-neutral-200 rounded-lg shadow-md"
+      className="sm:w-[350px] mx-auto p-6 bg-neutral-200 rounded-lg shadow-md"
     >
       <div className="mb-4">
         <label className="block text-sm font-medium mb-1">Name</label>

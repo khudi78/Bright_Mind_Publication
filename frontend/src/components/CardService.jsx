@@ -19,7 +19,7 @@ function ParallaxCard({ title, p1, p2, subtitle }) {
 
   return (
     <motion.div
-      className="relative w-92 h-84 [perspective:1000px]"
+      className="relative  w-80 h-70 sm:w-92 sm:h-84 [perspective:1000px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={resetRotate}
     >
@@ -33,7 +33,7 @@ function ParallaxCard({ title, p1, p2, subtitle }) {
 
         {/* Mid Layer */}
         <motion.div
-          className="absolute inset-0 flex  mx-10 my-8 text-white text-xl font-semibold"
+          className="absolute inset-0 flex   mx-5 sm:mx-10 my-4 sm:my-8 text-white text-xl font-semibold"
           animate={{ x: rotate.y * 1.5, y: rotate.x * -1.5 }}
           transition={{ type: "spring", stiffness: 150, damping: 15 }}
         >
@@ -42,21 +42,21 @@ function ParallaxCard({ title, p1, p2, subtitle }) {
 
         {/* Foreground Layer */}
         <motion.div
-          className="absolute left-[40px] top-20 pr-10 text-balance text-white text-sm "
+          className="absolute left-[20px] sm:left-[40px] top-14 sm:top-20 pr-5 sm:pr-10 text-balance text-white text-sm "
           animate={{ x: rotate.y * 3, y: rotate.x * -3 }}
           transition={{ type: "spring", stiffness: 150, damping: 15 }}
         >
           {subtitle}
         </motion.div>
         <motion.div
-          className="absolute left-[40px] top-[209px] pr-10 text-white text-sm "
+          className="absolute left-[25px] sm:left-[40px] top-[180px] sm:top-[209px] pr-10 text-white text-sm "
           animate={{ x: rotate.y * 3, y: rotate.x * -3 }}
           transition={{ type: "spring", stiffness: 150, damping: 15 }}
         >
           {p1}
         </motion.div>
         <motion.div
-          className="absolute left-[40px] top-[229px] pr-10 text-white text-sm "
+          className="absolute left-[25px] sm:left-[40px] top-[200px] sm:top-[229px] pr-10 text-white text-sm "
           animate={{ x: rotate.y * 3, y: rotate.x * -3 }}
           transition={{ type: "spring", stiffness: 150, damping: 15 }}
         >
@@ -69,7 +69,7 @@ function ParallaxCard({ title, p1, p2, subtitle }) {
 
 export default function CardService() {
   return (
-    <div className="flex flex-row gap-10 mx-auto mt-20">
+    <div className="flex flex-col sm:flex-row gap-10 mx-auto mt-20">
      
       <ParallaxCard title="Thesis Writing Support" p1="• Topic selection and research design" p2="• Structured writing and formatting" subtitle="Craft a standout thesis with guidance from our expert writers. From research design to final formatting, we help graduate and postgraduate students produce well-structured, submission-ready documents." />
       <ParallaxCard title="Dissertation Assistance" p1="• Research methodology development" p2="• Drafting, editing, and proofreading" subtitle="Achieve excellence in your doctoral research. We provide end-to-end support—from proposal development to final submission—ensuring your dissertation meets the highest academic standards." />

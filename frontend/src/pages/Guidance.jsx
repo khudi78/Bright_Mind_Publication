@@ -14,38 +14,38 @@ export default function Guidance() {
 
         />
 
-        <div className="max-w-5xl pl-20 mb-20  mx-auto flex flex-col gap-5  mt-15 py-10 bg-gray-200 shadow-lg shadow-gray-600 p-10 ">
+        <div className="w-[370px] sm:w-[1000px] sm:pl-20 mb-20  mx-auto flex flex-col gap-4 sm:gap-5  mt-15 py-5 sm:py-10 bg-gray-200 shadow-lg shadow-gray-600 px-3 sm:p-10 ">
           
-           <div className="text-2xl font-bold"> Our Research Guidance Solutions</div>
-            <div> Empowering your journey from manuscript to publication with expert guidance.</div>
+           <div className="text-xl sm:text-2xl font-bold"> Our Research Guidance Solutions</div>
+            <div className="text-sm sm:text-base"> Empowering your journey from manuscript to publication with expert guidance.</div>
             <div>
-                <ul className="list-disc flex flex-col gap-5 ml-5">
-                    <li> <h1 className="text-lg font-semibold"> Strategic Journal Guidance</h1>
-                        <ul className="ml-5">
+                <ul className="list-disc flex flex-col gap-5 sm:gap-5 ml-5">
+                    <li> <h1 className="text-base sm:text-lg font-semibold"> Strategic Journal Guidance</h1>
+                        <ul className="text-sm sm:text-base ml-2 sm:ml-5">
                             <li>Journal Selection & Recommendation → Tailored Journal</li>
                             <li>Matching Impact Factor & Scope Analysis → Choose the Right Platform for Your Research</li>
                         </ul>
                     </li>
-                    <li> <h1 className="text-lg font-semibold"> Manuscript Excellence</h1>
-                        <ul>
+                    <li> <h1 className="text-base sm:text-lg font-semibold"> Manuscript Excellence</h1>
+                        <ul className="text-sm sm:text-base ml-2 sm:ml-5">
                             <li>Formatting & Editing → Polished Manuscripts, Ready to Submit</li>
                             <li>Language Refinement & Proofreading → Clarity, Precision, and Professionalism</li>
                         </ul>
                     </li>
-                    <li> <h1 className="text-lg font-semibold"> Ethical & Compliance Support</h1>
-                        <ul>
+                    <li> <h1 className="text-base sm:text-lg font-semibold"> Ethical & Compliance Support</h1>
+                        <ul className="text-sm sm:text-base ml-2 sm:ml-5">
                             <li>Plagiarism Check & Reduction → Ensure Originality and Credibility</li>
                             <li>Publication Ethics Guidance → Navigate Ethical Standards with Confidence</li>
                         </ul>
                     </li>
-                    <li> <h1 className="text-lg font-semibold"> Submission & Communication Assistance</h1>
-                        <ul>
+                    <li> <h1 className="text-base sm:text-lg font-semibold"> Submission & Communication Assistance</h1>
+                        <ul className="text-sm sm:text-base ml-2 sm:ml-5">
                             <li>Cover Letter Preparation → Compelling Letters that Impress Editors</li>
                             <li>Response to Reviewers → Professional Replies to Peer Review Feedback</li>
                         </ul>
                     </li>
-                    <li> <h1 className="text-lg font-semibold"> Open Access & Citation Enhancement</h1>
-                        <ul>
+                    <li> <h1 className="text-base sm:text-lg font-semibold"> Open Access & Citation Enhancement</h1>
+                        <ul className="text-sm sm:text-base ml-2 sm:ml-5">
                             <li>Open Access Publication Support → Maximize Visibility of Your Research</li>
                             <li>Citation Improvement & Reference Management → Boost Reach and Recognition</li>
                         </ul>

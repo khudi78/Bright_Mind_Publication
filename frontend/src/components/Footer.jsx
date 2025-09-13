@@ -47,7 +47,7 @@ export default function Footer() {
               <MdKeyboardArrowRight /> <Link to="/contact">Contact Us</Link>
             </li>
             <li className="flex items-center gap-2 hover:cursor-pointer hover:text-gray-400 hover:text-[15px] sm:hover:text-[17px]">
-              <MdKeyboardArrowRight /> Privacy Policy
+              <MdKeyboardArrowRight /> <Link to="/policy">Privacy Policy</Link>
             </li>
             <li className="flex items-center gap-2 hover:cursor-pointer hover:text-gray-400 hover:text-[15px] sm:hover:text-[17px]">
               <MdKeyboardArrowRight />

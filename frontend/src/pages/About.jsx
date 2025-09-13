@@ -11,7 +11,7 @@ export default function About() {
 
 Bright Mind Publication is your trusted partner for scholarly success. We put your research first."
       />
-      <div className="max-w-5xl mx-auto flex flex-col gap-10 mt-10 py-10">
+      <div className="mx-5 sm:max-w-5xl sm:mx-auto flex flex-col gap-7 sm:gap-10 mt-5 sm:mt-10 py-10">
         <div>
           {" "}
           Bright Mind Publication, we put your research first. Your article gets
@@ -39,14 +39,14 @@ Bright Mind Publication is your trusted partner for scholarly success. We put yo
         </div>
       </div>
 
-      <div className="flex flex-row gap-20  p-10 w-[1120px] mx-auto mb-20">
-        <div className="border-shadow-lg shadow-2xl w-[500px] p-3 bg-gray-200">
-            <div className="text-3xl font-semibold mb-2">Vision</div>
-            <div>To be the most trusted global partner in academic publishing by empowering researchers, scholars, and institutions to share their knowledge with integrity, visibility, and impact across the world.</div>
+      <div className="flex flex-col ml-[-15px] sm:flex-row gap-15 sm:gap-20  p-10  sm:w-[1120px] sm:mx-auto mb-10 sm:mb-20">
+        <div className="border-shadow-lg shadow-2xl w-[360px] sm:w-[500px] p-3 bg-gray-200">
+            <div className="text-xl sm:text-3xl font-semibold mb-2">Vision</div>
+            <div className="text-sm sm:text-base">To be the most trusted global partner in academic publishing by empowering researchers, scholars, and institutions to share their knowledge with integrity, visibility, and impact across the world.</div>
         </div>
-        <div className="border-shadow-lg shadow-2xl w-[500px] h-[200px] p-3 bg-gray-200">
-            <div className="text-3xl font-semibold mb-2">Mission</div>
-            <div>To provide complete research publication support — from writing and editing to journal selection and final publication — ensuring quality, ethics, and credibility.
+        <div className="border-shadow-lg shadow-2xl w-[360px] sm:w-[500px] h-[200px] p-3 bg-gray-200">
+            <div className="text-xl sm:text-3xl font-semibold mb-2">Mission</div>
+            <div className="text-sm sm:text-base">To provide complete research publication support — from writing and editing to journal selection and final publication — ensuring quality, ethics, and credibility.
 
                   To empower researchers by connecting their work with reputed, indexed journals, maximizing visibility, recognition, and global impact.</div>
         </div>  
