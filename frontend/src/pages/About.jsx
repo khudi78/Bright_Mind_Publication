@@ -18,8 +18,8 @@ Bright Mind Publication is your trusted partner for scholarly success. We put yo
           top- priority review from our expert editors and peers across all
           fields, including engineering, medicine, law, business, and more. We
           provide seamless access to our vast network of research database
-          journals, including SCOPUS, Web of Science, Google Scholar, PubMed,
-          and ABDC, ensuring your work is seen by the right audience. As a
+          journals, including<strong> SCOPUS, Web of Science, Google Scholar, PubMed,
+          and ABDC</strong>, ensuring your work is seen by the right audience. As a
           leading publishing authority, we offer DOI indexing, boosting your
           article's visibility and impact. We're proud to have served 10,000+
           satisfied clients in 180+ countries, a testament to our commitment to
@@ -29,7 +29,7 @@ Bright Mind Publication is your trusted partner for scholarly success. We put yo
           publication challenges.
         </div>
         <div>
-          Your top priority is your success. We understand your research and
+          Our top priority is your success. We understand your research and
           help you find the perfect journal fit from our list of indexed
           publications. We offer complete access to our citation and reference
           databases, ensuring you have the resources you need. We are proud to
