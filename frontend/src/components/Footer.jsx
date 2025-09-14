@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaWhatsapp, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -65,7 +65,7 @@ export default function Footer() {
             <FaPhoneAlt className="text-base sm:text-xl"/> +91 77760 54424
           </div>
           <div className="flex items-center gap-5 text-sm sm:text-base border-b-1 pb-3">
-            <IoMdMail  className="text-base sm:text-xl"/> email@example.com
+            <IoMdMail  className="text-base sm:text-xl"/> support@bmpublication.com
           </div>
 
         </div>
@@ -84,6 +84,9 @@ export default function Footer() {
         </div>
         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
          <Link to="https://www.linkedin.com/in/bright-mind-publication-528b44383/">  <FaLinkedinIn className="text-gray-800" /></Link>
+        </div> 
+        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
+         <Link to="https://www.facebook.com/share/1GcP9AAxTb/">  <FaFacebookF className="text-gray-800" /></Link>
         </div> 
         </div>
           <div>

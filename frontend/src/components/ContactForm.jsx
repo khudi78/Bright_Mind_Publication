@@ -18,6 +18,8 @@ export default function ContactForm() {
 
     try {
       await axios.post("https://bright-mind-publication-yn5o.vercel.app/send-email", formData);
+            // await axios.post("http://localhost:5000/send-email", formData);
+
       alert("Message sent successfully!");
       setFormData({ name: "", subject: "", email: "", message: "" });
     } catch (error) {

@@ -2,7 +2,9 @@ import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 
+dotenv.config();
 const app = express();
 
 // Middleware
@@ -16,19 +18,22 @@ app.post("/send-email", async (req, res) => {
   try {
     // Configure transporter
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.ADMIN_EMAIL,   // use environment variable
-        pass: process.env.APP_PASSWORD,  // use environment variable
-      },
+     host: "smtp.hostinger.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.ADMIN_EMAIL, // your Hostinger email
+      pass: process.env.APP_PASSWORD // your email password
+    },
     });
 
     // Send mail
     await transporter.sendMail({
-      from: `"${name}" <${email}>`,
+       from: `"${name}" <${process.env.ADMIN_EMAIL}>`,
       to: process.env.ADMIN_EMAIL,
+      replyTo: email,
       subject: subject,
-      text: `You have a new message:\n\nName: ${name}\nEmail: ${email}\n\n${message}`,
+      text: `You have a new message:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`,
     });
 
     res.json({ success: true, message: "Email sent successfully!" });
@@ -40,5 +45,5 @@ app.post("/send-email", async (req, res) => {
 
 // Instead of app.listen, export app (Vercel will handle it)
 module.exports = app;
-// const PORT = 5000;
-// app.listen(PORT, () => { console.log(`Server running on http://localhost:${PORT}`); });
+//const PORT = 5000;
+//app.listen(PORT, () => { console.log(`Server running on http://localhost:${PORT}`); });

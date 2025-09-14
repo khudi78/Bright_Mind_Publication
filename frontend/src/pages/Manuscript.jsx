@@ -2,15 +2,15 @@ import React from "react";
 import Headother from "../components/Headother";
 import CardService from "../components/CardService";
 import SubHeader from "../components/SubHeader";
+import manuscript from "../assets/manuscript.jpg"
 
 export default function Manuscript() {
   return (
     <>
       <SubHeader
-        bgImage="https://www.zibelinepub.com/wp-content/uploads/2018/01/book.jpg"
+        bgImage={manuscript}
         title="Manuscript , Thesis Writing & Editing "
         subtitle="Bright Mind Publication offers expert manuscript and thesis writing support for students, researchers, and academics across all fields. From concept to final submission, our team ensures your work meets the highest academic standards—clear, professional, and institution-ready."
-        image="https://media.istockphoto.com/id/508586144/photo/reading-book.jpg?s=612x612&w=0&k=20&c=OsmoANlXNS89ocHMQtbHYAj1EUTdyJ6GqMJpFmOtL8w="
 
       />
 

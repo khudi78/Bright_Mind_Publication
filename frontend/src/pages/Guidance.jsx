@@ -1,16 +1,16 @@
 import React from "react";
 import Headother from "../components/Headother";
 import SubHeader from "../components/SubHeader";
+import guidance from "../assets/guidance.jpg"
 
 export default function Guidance() {
   return (
     <div>
       <>
         <SubHeader
-          bgImage="https://www.zibelinepub.com/wp-content/uploads/2018/01/book.jpg"
+          bgImage={guidance}
           title="Research Guidance"
           subtitle="Our publication support services provide end-to-end assistance—from meticulous editing, formatting, and plagiarism checks to journal selection and submission. We help you target top-indexed journals like Scopus, Web of Science, and PubMed, boosting your chances of acceptance. With personalized guidance, timely updates, and ethical practices, we make your publication journey smooth, transparent, and impactful."
-                image="https://images.stockcake.com/public/e/b/e/ebedddb2-b72d-45d5-801c-72f210e77b5d_large/girl-reading-intently-stockcake.jpg"
 
         />
 

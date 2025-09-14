@@ -1,9 +1,9 @@
 import React,{useState} from "react";
 import { IoMdMail } from "react-icons/io";
-import {  FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 import { FiMenu, FiX } from "react-icons/fi"; // menu and close icons
 import WhatsapButton from "./WhatsapButton";
 
@@ -22,8 +22,8 @@ export default function Header({ bgImage }) {
         {/* Top bar */}
         <div className="relative z-10 bg-gray-900/50 text-white py-2">
           <div className="w-full pl-2 pr-2 sm:max-w-7xl mx-auto flex justify-between sm:gap-60 gap-1 items-center">
-            <div className="flex gap-3 text-sm sm:text-base">
-              <IoMdMail className="text-lg " /> email@example.com
+            <div className="flex gap-3 text-sm sm:text-base ">
+              <IoMdMail className="text-lg sm:mt-[5px]" /> <Link to="/contact">support@bmpublication.com</Link>
             </div>
             <div className="w-[500px] overflow-hidden">
               <p
@@ -44,7 +44,7 @@ export default function Header({ bgImage }) {
             </div>
             <div className="flex gap-3 text-sm">
               <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
-                <FaInstagram className="text-gray-800" />
+                <Link to="https://www.instagram.com/brightmind_publications?igsh=cXFxeTlveXZoNXlq"><FaInstagram className="text-gray-800" /></Link>
               </div>
               <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400">
                  <WhatsapButton subject="iconi" />
@@ -52,17 +52,20 @@ export default function Header({ bgImage }) {
               <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-400">
                 <Link to="https://www.linkedin.com/in/bright-mind-publication-528b44383/"><FaLinkedinIn className="text-gray-800" /></Link>
               </div>
+              <div className="sm:w-8 sm:h-8 w-7 h-7 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-blue-600">
+                <Link to="https://www.facebook.com/share/1GcP9AAxTb/"><FaFacebookF className="text-gray-800 " /></Link>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Navbar */}
-        <div className="relative z-10 bg-gray-900/30 text-white  h-[455px] sm:h-[640px]">
+        <div className="relative z-10 bg-gray-300/20 text-white  h-[455px] sm:h-[640px]">
           <div className="flex flex-col">
             <div className=" flex-row w-full sm:max-w-7xl mx-auto flex justify-between gap-[] sm:gap-[600px] items-center">
               {/* Logo */}
               <div className="pl-2 text-xl sm:text-2xl font-bold flex flex-row">
-                <div className="w-[60px] sm:w-[90px]"><img src={logo} alt="BM Publication Logo" /></div>
+                <div className="w-[60px] sm:w-[90px]"><img src={logo1} alt="BM Publication Logo" /></div>
                 <div className="mt-3 sm:mt-5">BM Publication</div>
               </div>
 

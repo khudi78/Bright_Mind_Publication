@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import CardGrid from "../components/CardGrid";
 import { Link } from "react-router-dom";
 
-
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
