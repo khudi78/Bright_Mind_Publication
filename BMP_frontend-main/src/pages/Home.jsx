@@ -9,7 +9,7 @@ function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Slideshow */}
       <div>
-        <Header bgImage="https://wallpapers.com/images/hd/black-and-white-book-1920-x-1080-wallpaper-004yikgbyrhdwl3w.jpg" />
+        <Header bgImage="https://static.vecteezy.com/system/resources/previews/021/703/504/large_2x/magic-open-book-closeup-macrography-with-white-background-free-photo.jpg" />
       </div>
       <div className=" my-10">
         {/* About us */}

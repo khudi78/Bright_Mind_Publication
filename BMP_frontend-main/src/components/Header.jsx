@@ -60,7 +60,7 @@ export default function Header({ bgImage }) {
         </div>
 
         {/* Navbar */}
-        <div className="relative z-10 bg-gray-300/20 text-white  h-[455px] sm:h-[640px]">
+        <div className="relative z-10 bg-gray-500/20 text-white  h-[455px] sm:h-[640px]">
           <div className="flex flex-col">
             <div className=" flex-row w-full sm:max-w-7xl mx-auto flex justify-between gap-[] sm:gap-[600px] items-center">
               {/* Logo */}

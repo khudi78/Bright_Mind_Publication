@@ -77,7 +77,7 @@ export default function Footer() {
       <div className="flex flex-col sm:flex-row sm:w-[1310px] gap-2 sm:justify-between mt-[-140px] sm:mt-[-80px] text-xl mx-20 sm:mx-14">
        <div className="flex gap-4 ml-5 sm:ml-12 mt-40">
          <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-pink-400">
-          <FaInstagram className="text-gray-800" />
+          <Link to="https://www.instagram.com/brightmind_publications?igsh=cXFxeTlveXZoNXlq"><FaInstagram className="text-gray-800" /></Link>
         </div>
         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400">
           <WhatsapButton subject="iconi" />

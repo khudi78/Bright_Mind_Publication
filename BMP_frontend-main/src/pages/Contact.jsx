@@ -22,8 +22,8 @@ export default function Contact() {
                 </div>
 
                 <div className='flex flex-col sm:w-[350px] sm:ml-13 gap-3 p-4  bg-neutral-200 border-gray-800 border-1 py-7 mt-7 rounded-sm shadow-gray-800'>
-                    <div className='shadow-lg w-[200px] text-center p-3 mx-auto bg-neutral-300'>1234567890</div>
-                    <div className='shadow-lg w-[200px] text-center p-3 mx-auto bg-neutral-300'>example@gmail.com</div>
+                    <div className='shadow-lg w-[200px] text-center p-3 mx-auto bg-neutral-300'> +91 7776054424</div>
+                    <div className='shadow-lg w-[280px] text-center p-3 mx-auto bg-neutral-300'>support@bmpublication.com</div>
                 </div>
             </div>
             <div className='w-[320px] h-[3px] sm:w-[2px] sm:h-[550px] rounded-sm bg-gradient-to-b from-gray-400 to-gray-900'></div>
